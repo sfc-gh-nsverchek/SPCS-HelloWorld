@@ -180,7 +180,9 @@ ALTER USER IF EXISTS helloworldspcs_service_acct ADD PROGRAMMATIC ACCESS TOKEN m
 COMMENT = 'mdw pat token';
 
 
-
+--------------------------------------
+-- BUILD AND PUSH DOCKER CONTAINERS
+--------------------------------------
 
 docker build --rm --platform linux/amd64 -f Dockerfile -t <account id>.registry.snowflakecomputing.com/helloworldspcs_db/helloworldspcs_schema/img_repo/helloworld_frontend:latest .
 docker push <account id>.registry.snowflakecomputing.com/helloworldspcs_db/helloworldspcs_schema/img_repo/helloworld_frontend:latest
