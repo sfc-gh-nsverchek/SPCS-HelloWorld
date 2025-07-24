@@ -1,4 +1,7 @@
 
+--------------------------------------
+-- SQL COMMANDS FOR SETUP
+--------------------------------------
 CREATE ROLE helloworldspcs_admin;
 CREATE ROLE helloworldspcs_user;
 
